@@ -1,0 +1,242 @@
+Microsoft Windows [Version 10.0.22631.3593]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>docker --version
+Docker version 26.1.1, build 4cf5afa
+
+C:\Windows\System32>docker login
+Authenticating with existing credentials...
+Login Succeeded
+
+C:\Windows\System32>docker run abhi
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2024/06/09 18:39:48 [notice] 1#1: using the "epoll" event method
+2024/06/09 18:39:48 [notice] 1#1: nginx/1.27.0
+2024/06/09 18:39:48 [notice] 1#1: built by gcc 13.2.1 20231014 (Alpine 13.2.1_git20231014)
+2024/06/09 18:39:48 [notice] 1#1: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/06/09 18:39:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/06/09 18:39:48 [notice] 1#1: start worker processes
+2024/06/09 18:39:48 [notice] 1#1: start worker process 30
+2024/06/09 18:39:48 [notice] 1#1: start worker process 31
+2024/06/09 18:39:48 [notice] 1#1: start worker process 32
+2024/06/09 18:39:48 [notice] 1#1: start worker process 33
+2024/06/09 18:39:48 [notice] 1#1: start worker process 34
+2024/06/09 18:39:48 [notice] 1#1: start worker process 35
+2024/06/09 18:39:48 [notice] 1#1: start worker process 36
+2024/06/09 18:39:48 [notice] 1#1: start worker process 37
+2024/06/09 18:39:48 [notice] 1#1: start worker process 38
+2024/06/09 18:39:48 [notice] 1#1: start worker process 39
+2024/06/09 18:39:48 [notice] 1#1: start worker process 40
+2024/06/09 18:39:48 [notice] 1#1: start worker process 41
+2024/06/09 18:39:58 [notice] 1#1: signal 2 (SIGINT) received, exiting
+2024/06/09 18:39:58 [notice] 37#37: exiting
+2024/06/09 18:39:58 [notice] 37#37: exit
+2024/06/09 18:39:58 [notice] 38#38: exiting
+2024/06/09 18:39:58 [notice] 34#34: exiting
+2024/06/09 18:39:58 [notice] 38#38: exit
+2024/06/09 18:39:58 [notice] 34#34: exit
+2024/06/09 18:39:58 [notice] 30#30: exiting
+2024/06/09 18:39:58 [notice] 30#30: exit
+2024/06/09 18:39:58 [notice] 31#31: exiting
+2024/06/09 18:39:58 [notice] 31#31: exit
+2024/06/09 18:39:58 [notice] 35#35: exiting
+2024/06/09 18:39:58 [notice] 35#35: exit
+2024/06/09 18:39:58 [notice] 39#39: exiting
+2024/06/09 18:39:58 [notice] 39#39: exit
+2024/06/09 18:39:58 [notice] 32#32: exiting
+2024/06/09 18:39:58 [notice] 32#32: exit
+2024/06/09 18:39:58 [notice] 41#41: exiting
+2024/06/09 18:39:58 [notice] 41#41: exit
+2024/06/09 18:39:58 [notice] 33#33: exiting
+2024/06/09 18:39:58 [notice] 33#33: exit
+2024/06/09 18:39:58 [notice] 36#36: exiting
+2024/06/09 18:39:58 [notice] 36#36: exit
+2024/06/09 18:39:58 [notice] 40#40: exiting
+2024/06/09 18:39:58 [notice] 40#40: exit
+2024/06/09 18:39:58 [notice] 1#1: signal 14 (SIGALRM) received
+2024/06/09 18:39:58 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/06/09 18:39:58 [notice] 1#1: worker process 30 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: worker process 31 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: worker process 37 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: worker process 41 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: signal 29 (SIGIO) received
+2024/06/09 18:39:58 [notice] 1#1: signal 17 (SIGCHLD) received from 41
+2024/06/09 18:39:58 [notice] 1#1: worker process 40 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: signal 29 (SIGIO) received
+2024/06/09 18:39:58 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2024/06/09 18:39:58 [notice] 1#1: worker process 32 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: worker process 34 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: worker process 35 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: worker process 36 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: signal 29 (SIGIO) received
+2024/06/09 18:39:58 [notice] 1#1: signal 17 (SIGCHLD) received from 38
+2024/06/09 18:39:58 [notice] 1#1: worker process 33 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: worker process 38 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: worker process 39 exited with code 0
+2024/06/09 18:39:58 [notice] 1#1: exit
+
+C:\Windows\System32>docker images
+REPOSITORY         TAG       IMAGE ID       CREATED       SIZE
+rev                latest    d9e41d433f22   2 hours ago   48.3MB
+hello-docker       latest    92d9aac8d9c8   2 hours ago   48.3MB
+abhi               latest    007de8a9e202   6 hours ago   48.3MB
+myfirstpythonapp   latest    2a7528d6f5f6   7 hours ago   1.02GB
+<none>             <none>    ab195ede1a2b   7 hours ago   1.02GB
+ubuntu             latest    17c0145030df   10 days ago   76.2MB
+
+C:\Windows\System32>docker run hemanth
+Unable to find image 'hemanth:latest' locally
+docker: Error response from daemon: pull access denied for hemanth, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+
+C:\Windows\System32>docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+c1ec31eb5944: Pull complete
+Digest: sha256:266b191e926f65542fa8daaec01a192c4d292bff79426f47300a046e1bc576fd
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+
+C:\Windows\System32>docker images
+REPOSITORY         TAG       IMAGE ID       CREATED         SIZE
+rev                latest    d9e41d433f22   2 hours ago     48.3MB
+hello-docker       latest    92d9aac8d9c8   2 hours ago     48.3MB
+abhi               latest    007de8a9e202   7 hours ago     48.3MB
+myfirstpythonapp   latest    2a7528d6f5f6   7 hours ago     1.02GB
+<none>             <none>    ab195ede1a2b   7 hours ago     1.02GB
+ubuntu             latest    17c0145030df   10 days ago     76.2MB
+hello-world        latest    d2c94e258dcb   13 months ago   13.3kB
+
+C:\Windows\System32>docker pull ubuntu
+Using default tag: latest
+latest: Pulling from library/ubuntu
+Digest: sha256:e3f92abc0967a6c19d0dfa2d55838833e947b9d74edbcb0113e48535ad4be12a
+Status: Image is up to date for ubuntu:latest
+docker.io/library/ubuntu:latest
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview ubuntu
+
+C:\Windows\System32>docker run -it -d ubuntu
+9e3dc0143df46396be6682e131ae3cd178fb78da585369e97843c3938cc4712b
+
+C:\Windows\System32>docker ps -a
+CONTAINER ID   IMAGE              COMMAND                  CREATED          STATUS                     PORTS                  NAMES
+9e3dc0143df4   ubuntu             "/bin/bash"              34 seconds ago   Up 33 seconds                                     practical_moore
+0464ea817219   hello-world        "/hello"                 3 minutes ago    Exited (0) 3 minutes ago                          competent_spence
+674de495b18e   abhi               "/docker-entrypoint.…"   5 minutes ago    Exited (0) 4 minutes ago                          clever_wing
+3b49e4fdbdba   rev                "/docker-entrypoint.…"   2 hours ago      Up 2 hours                 0.0.0.0:707->80/tcp    hungry_chaplygin
+5388c9d31235   hello-docker       "/docker-entrypoint.…"   2 hours ago      Exited (255) 2 hours ago   0.0.0.0:6968->80/tcp   competent_dhawan
+097f27a3bcf7   hello-docker       "/docker-entrypoint.…"   2 hours ago      Created                                           practical_villani
+666bd85d3eb4   hello-docker       "/docker-entrypoint.…"   2 hours ago      Created                                           xenodochial_ptolemy
+0f7c3ad077d8   hello-docker       "/docker-entrypoint.…"   2 hours ago      Exited (0) 2 hours ago                            exciting_engelbart
+bbe621ccba8a   hello-docker       "/docker-entrypoint.…"   2 hours ago      Exited (255) 2 hours ago   80/tcp                 hopeful_sammet
+534135b92ae3   hello-docker       "/docker-entrypoint.…"   3 hours ago      Exited (0) 2 hours ago                            beautiful_yonath
+0e5d58321995   hello-docker       "/docker-entrypoint.…"   3 hours ago      Exited (0) 3 hours ago                            laughing_wu
+cab5a7ca1a3e   2a7528d6f5f6       "python3 ./app.py"       3 hours ago      Exited (0) 3 hours ago                            determined_yalow
+04bdfb4fcd2c   abhi               "/docker-entrypoint.…"   7 hours ago      Exited (255) 2 hours ago   0.0.0.0:6969->80/tcp   magical_turing
+865a95c5860f   myfirstpythonapp   "python3 ./app.py"       7 hours ago      Exited (0) 7 hours ago                            firstpyc1
+57f4ecbf8a5b   ab195ede1a2b       "python3 ./app.py"       7 hours ago      Exited (0) 7 hours ago                            firstpyc
+
+C:\Windows\System32>docker exec -it 9e3dc0143df4 bash
+root@9e3dc0143df4:/# echo hello
+hello
+root@9e3dc0143df4:/# exit
+exit
+
+What's next?
+  Try Docker Debug for seamless, persistent debugging tools in any container or image → docker debug 9e3dc0143df4
+  Learn more at https://docs.docker.com/go/debug-cli/
+
+C:\Windows\System32>docker stop 9e3dc0143df4
+9e3dc0143df4
+
+C:\Windows\System32>docker commit 9e3dc0143df4 abhi1/ubuntu
+sha256:2d63feac2ccfb9a420690a36c0473164c1bd2e01a421359d129e1395f24009e9
+
+C:\Windows\System32>docker images
+REPOSITORY         TAG       IMAGE ID       CREATED          SIZE
+abhi1/ubuntu       latest    2d63feac2ccf   23 seconds ago   76.2MB
+rev                latest    d9e41d433f22   2 hours ago      48.3MB
+hello-docker       latest    92d9aac8d9c8   3 hours ago      48.3MB
+abhi               latest    007de8a9e202   7 hours ago      48.3MB
+myfirstpythonapp   latest    2a7528d6f5f6   7 hours ago      1.02GB
+<none>             <none>    ab195ede1a2b   7 hours ago      1.02GB
+ubuntu             latest    17c0145030df   10 days ago      76.2MB
+hello-world        latest    d2c94e258dcb   13 months ago    13.3kB
+
+C:\Windows\System32>docker push abhi1/ubuntu
+Using default tag: latest
+The push refers to repository [docker.io/abhi1/ubuntu]
+5f1f435682af: Preparing
+42d3f8788282: Preparing
+denied: requested access to the resource is denied
+
+C:\Windows\System32>docker rm 3b49e4fdbdba
+Error response from daemon: cannot remove container "/hungry_chaplygin": container is running: stop the container before removing or force remove
+
+C:\Windows\System32>docker rm 5388c9d31235
+5388c9d31235
+
+C:\Windows\System32>docker ps -a
+CONTAINER ID   IMAGE              COMMAND                  CREATED          STATUS                       PORTS                  NAMES
+9e3dc0143df4   ubuntu             "/bin/bash"              8 minutes ago    Exited (137) 5 minutes ago                          practical_moore
+0464ea817219   hello-world        "/hello"                 11 minutes ago   Exited (0) 11 minutes ago                           competent_spence
+674de495b18e   abhi               "/docker-entrypoint.…"   13 minutes ago   Exited (0) 12 minutes ago                           clever_wing
+3b49e4fdbdba   rev                "/docker-entrypoint.…"   2 hours ago      Up 2 hours                   0.0.0.0:707->80/tcp    hungry_chaplygin
+097f27a3bcf7   hello-docker       "/docker-entrypoint.…"   3 hours ago      Created                                             practical_villani
+666bd85d3eb4   hello-docker       "/docker-entrypoint.…"   3 hours ago      Created                                             xenodochial_ptolemy
+0f7c3ad077d8   hello-docker       "/docker-entrypoint.…"   3 hours ago      Exited (0) 3 hours ago                              exciting_engelbart
+bbe621ccba8a   hello-docker       "/docker-entrypoint.…"   3 hours ago      Exited (255) 2 hours ago     80/tcp                 hopeful_sammet
+534135b92ae3   hello-docker       "/docker-entrypoint.…"   3 hours ago      Exited (0) 3 hours ago                              beautiful_yonath
+0e5d58321995   hello-docker       "/docker-entrypoint.…"   3 hours ago      Exited (0) 3 hours ago                              laughing_wu
+cab5a7ca1a3e   2a7528d6f5f6       "python3 ./app.py"       3 hours ago      Exited (0) 3 hours ago                              determined_yalow
+04bdfb4fcd2c   abhi               "/docker-entrypoint.…"   7 hours ago      Exited (255) 2 hours ago     0.0.0.0:6969->80/tcp   magical_turing
+865a95c5860f   myfirstpythonapp   "python3 ./app.py"       7 hours ago      Exited (0) 7 hours ago                              firstpyc1
+57f4ecbf8a5b   ab195ede1a2b       "python3 ./app.py"       7 hours ago      Exited (0) 7 hours ago                              firstpyc
+
+C:\Windows\System32>docker rmi 2d63feac2ccf
+Untagged: abhi1/ubuntu:latest
+Deleted: sha256:2d63feac2ccfb9a420690a36c0473164c1bd2e01a421359d129e1395f24009e9
+Deleted: sha256:3d1fa977d8cd20e3b3f9aecbdf8f148da2802cd1a9972d8d56d99a56d9e95e11
+
+C:\Windows\System32>docker images
+REPOSITORY         TAG       IMAGE ID       CREATED         SIZE
+rev                latest    d9e41d433f22   2 hours ago     48.3MB
+hello-docker       latest    92d9aac8d9c8   3 hours ago     48.3MB
+abhi               latest    007de8a9e202   7 hours ago     48.3MB
+myfirstpythonapp   latest    2a7528d6f5f6   7 hours ago     1.02GB
+<none>             <none>    ab195ede1a2b   7 hours ago     1.02GB
+ubuntu             latest    17c0145030df   10 days ago     76.2MB
+hello-world        latest    d2c94e258dcb   13 months ago   13.3kB
+
+C:\Windows\System32>
