@@ -239,4 +239,203 @@ myfirstpythonapp   latest    2a7528d6f5f6   7 hours ago     1.02GB
 ubuntu             latest    17c0145030df   10 days ago     76.2MB
 hello-world        latest    d2c94e258dcb   13 months ago   13.3kB
 
-C:\Windows\System32> i am abhinay
+C:\Windows\System32>
+node jsfilename
+npm install selenium-webdriver
+npm init
+new terminal
+const {Builder, By , Key , util } = require("selenium-webdriver");
+async function example() {
+        let driver = await new Builder().forBrowser("firefox").build();
+        await driver.get("http://google.com");
+        await driver.findElement(By.name("q")).sendKeys("Selenium",Key.RETURN);
+}
+example();
+const { Builder, By, Key, until } = require('selenium-webdriver');
+const chrome = require('selenium-webdriver/chrome');
+
+(async () => {
+    const driver = await new Builder()
+        .forBrowser('chrome')
+        .setChromeOptions(new chrome.Options())
+        .build();
+
+    try {
+        // Test Case 1: Navigate to Google and verify title
+        await driver.get('https://www.google.com');
+        await driver.wait(until.titleContains('Google'), 10000);
+        console.log('Test Case 1 Passed: Title contains "Google"');
+
+        // Test Case 2: Search for "Selenium" on Google
+        await driver.findElement(By.name('q')).sendKeys('Selenium', Key.RETURN);
+        await driver.wait(until.titleContains('Selenium'), 10000);
+        console.log('Test Case 2 Passed: Title contains "Selenium"');
+
+        // Test Case 3: Verify search results
+        const searchResults = await driver.findElements(By.css('div.g'));
+        console.log(Test Case 3 Passed: Found ${searchResults.length} search results);
+
+        // Test Case 4: Verify the presence of the search input box
+        const searchInput = await driver.findElement(By.name('q'));
+        const isSearchInputDisplayed = await searchInput.isDisplayed();
+        console.log(Test Case 4 Passed: Search input box is displayed: 
+ ${isSearchInputDisplayed});
+
+    } catch (error) {
+        console.error('One or more test cases failed:', error);
+    } finally {
+        await driver.quit();
+    }
+})();
+To create a registration form with Flask, you'll follow these steps:
+
+1. *Set up the Flask environment*.
+2. *Create the HTML form*.
+3. *Handle form submission with Flask*.
+
+### Step 1: Set Up the Flask Environment
+
+First, install Flask if you haven't already:
+
+bash
+pip install Flask
+
+
+### Step 2: Create the Flask Application
+
+Create a new directory for your project and set up the necessary files:
+
+
+event_registration/
+    ├── app.py
+    ├── templates/
+    │   └── register.html
+    └── static/
+        └── styles.css
+
+
+### Step 3: Create the HTML Form
+
+Create the register.html file inside the templates directory:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Event Registration</h2>
+        <form action="{{ url_for('register') }}" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+### Step 4: Create the Flask Application
+
+Create the app.py file in the root directory:
+
+python
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('register.html')
+
+@app.route('/register', methods=['POST'])
+def register():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        phone = request.form['phone']
+        # You can process the data here (e.g., save to a database)
+
+        return f"<h2>Registration Successful</h2><p>Name: {name}</p><p>Email: {email}</p><p>Phone: {phone}</p>"
+    return "Invalid request method."
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+### Step 5: Add Basic Styling (Optional)
+
+Create a styles.css file inside the static directory for basic styling:
+
+css
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+
+### Step 6: Run the Application
+
+Navigate to your project directory in the terminal and run the Flask application:
+
+bash
+python app.py
+
+
+Open your web browser and navigate to http://127.0.0.1:5000/ to see the registration form. Fill it out and submit it to see the submitted data displayed on the screen.
+
+### Summary
+
+This setup provides a basic Flask application with an HTML registration form. The form submission is handled by Flask, which processes the data and displays a confirmation message. You can extend this application by adding more features, such as data validation, saving the data to a database, or sending confirmation emails.
